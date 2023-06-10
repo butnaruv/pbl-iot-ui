@@ -1,0 +1,90 @@
+.main {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/assets/background.png");
+    background-position: center top;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.username {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 41%;
+    left: 13%;
+    width: 70%;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 13%;
+    width: 70%;
+}
+
+input {
+    position: absolute;
+    top: 41%;
+    left: 13%;
+    width: 70%;
+
+    width: 100%;
+    height: 5%;
+    padding: 0;
+    border-color: #587C85;
+    border-width: 3px;
+    border-radius: 19px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+input::placeholder {
+    text-align: center;
+    color: rgb(71, 69, 69);
+}
+
+button.continueWithGoogle {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 60%;
+    left: 13%;
+    width: 70%;
+    height: 5%;
+    padding: 5%;
+    border-color: #587C85;
+    border-width: 2px;
+    border-radius: 8px;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+button.next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 80%;
+    left: 22%;
+    width: 56%;
+    height: 5%;
+    padding: 28px;
+    background-color: #587C85;
+    border-color: #587C85;
+    border-radius: 19px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}

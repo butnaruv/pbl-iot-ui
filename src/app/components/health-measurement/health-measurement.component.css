@@ -1,0 +1,24 @@
+.main {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/assets/inverse-background.png");
+    background-position: center top;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    font-family: 'Montserrat', sans-serif;
+}
+
+div.displayData {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 60%;
+    left: 23%;
+    width: 54%;
+    height: 25%;
+    background-color: #587C85;
+    border-color: #2C3E50;
+    border-width: 3px;
+    border-radius: 100px;
+}
