@@ -6,36 +6,47 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
     font-family: 'Montserrat', sans-serif;
+    position: fixed;
 }
 
-.username {
+div.entryDiv {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 41%;
-    left: 13%;
-    width: 70%;
+    gap: 10px;
+    margin-top: 25vh;
 }
 
-.login {
+form.entryForm {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 50%;
-    left: 13%;
-    width: 70%;
-}
-
-input {
-    position: absolute;
-    top: 41%;
-    left: 13%;
-    width: 70%;
-
     width: 100%;
-    height: 5%;
+    gap: 10px;
+}
+
+div.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+
+div.signup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+}
+input {
+    width: 80vw;
+    height: 7vh;
     padding: 0;
     border-color: #587C85;
     border-width: 3px;
@@ -52,19 +63,15 @@ input::placeholder {
 
 button.continueWithGoogle {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    gap: 10px;
-    position: absolute;
-    top: 60%;
-    left: 13%;
-    width: 70%;
-    height: 5%;
-    padding: 5%;
+    gap:10px;
+    width: 80vw;
+    height: 7vh;
+    padding: 0;
     border-color: #587C85;
-    border-width: 2px;
-    border-radius: 8px;
-    background-color: white;
+    border-width: 3px;
+    border-radius: 19px;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     font-weight: 500;

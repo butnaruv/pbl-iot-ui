@@ -1,17 +1,17 @@
 <div class="main">
-    <form [formGroup]="entryForm" class="entryForm">
-        <input formControlName="username" type="text" placeholder="Username"><br>
-
-        <div *ngIf="isUserChecked && isUserRegistered" class="login">
-            <input formControlName="password" type="password" placeholder="Password"><br>
-        </div>
-
-        <div *ngIf="isUserChecked && !isUserRegistered" class="signup">
-            <input formControlName="password" type="password" placeholder="Password"><br>
-            <input formControlName="confirmPassword" type="password" placeholder="Confirm password"><br>
-        </div>
-    </form>
-
-    <button class="continueWithGoogle"><img src="/assets/google.png" height="20" width="20" />Continue with google</button>
+    <div class ="entryDiv">        
+        <form [formGroup]="entryForm" class="entryForm">
+            <input formControlName="username" type="text" placeholder="Username"><br>
+            <div *ngIf="isUserChecked && isUserRegistered" class="login">
+                <input formControlName="password" type="password" placeholder="Password"><br>
+            </div>
+            <div *ngIf="isUserChecked && !isUserRegistered" class="signup">
+                <input formControlName="password" type="password" placeholder="Password"><br>
+                <input formControlName="confirmPassword" type="password" placeholder="Confirm password"><br>
+            </div>
+        </form>
+        <button class="continueWithGoogle"><img src="/assets/google.png" height="20" width="20" />Continue with
+            google</button>
+    </div>
     <button class="next" (click)="onClick()">{{ buttonTitle }}</button>
 </div>
