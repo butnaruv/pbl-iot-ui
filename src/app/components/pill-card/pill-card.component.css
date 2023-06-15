@@ -1,0 +1,55 @@
+.pillCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    max-height: 80px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #2C3E50;
+    background-color: #f0f0f0;
+}
+
+.pillDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding-left: 5%;
+    width: 80%;
+    height: 100%;
+    color: #2C3E50;
+}
+
+.hour {
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #2C3E50;
+    background-color: #2C3E50;
+    width: 28%;
+    height: 25%;
+    color: white;
+    text-align: center;
+}
+
+.name {
+    font-size: 120%;
+    height: 50%;
+    font-weight: 600;
+}
+
+.cardFunctionalities {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 20%;
+    height: 100%;
+}
+
+img {
+    width: 30%;
+}
