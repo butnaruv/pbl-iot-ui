@@ -14,6 +14,15 @@ import { AddMedicineComponent } from './components/add-medicine/add-medicine.com
 import { SideNavbarComponent } from './components/side-navbar/side-navbar.component';
 import { CommonModule } from '@angular/common';
 import { BodyComponent } from './components/body/body.component';
+import { IMqttServiceOptions, MqttModule } from 'ngx-mqtt';
+import { environment as env } from '../environments/environment.prod';
+
+const MQTT_SERVICE_OPTIONS: IMqttServiceOptions = {
+  hostname: env.mqtt.server,
+  port: env.mqtt.port,
+  protocol: (env.mqtt.protocol === "wss") ? "wss" : "ws",
+  path: '',
+};
 
 @NgModule({
   declarations: [
@@ -33,7 +42,8 @@ import { BodyComponent } from './components/body/body.component';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    CommonModule
+    CommonModule,
+    MqttModule.forRoot(MQTT_SERVICE_OPTIONS)
   ],
   providers: [],
   bootstrap: [AppComponent]
