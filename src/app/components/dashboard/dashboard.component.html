@@ -1,0 +1,25 @@
+<div class="main">
+    <div class="menu">
+        <img src="/assets/menu.png" alt="menu" (click) = enterMenu()>
+        <img src="/assets/notification.png" alt="notification">
+    </div>
+    <app-side-navbar *ngIf = isClicked></app-side-navbar>
+    <div *ngIf = !isClicked class="todayPills">
+        <div  class="day">Today's pills</div>
+        <div class="listOfPills">
+            <div class="timeBasedList">
+                <h5>Morning</h5>
+                <app-pill-card [name]="'Paracetamol'" [hour]="'10:00'"></app-pill-card>
+            </div>
+            <div class="timeBasedList">
+                <h5>Day</h5>
+                <app-pill-card [name]="'Omega-3'" [hour]="'14:00'"></app-pill-card>
+            </div>
+            <div class="timeBasedList">
+                <h5>Evening</h5>
+                <app-pill-card [name]="'Paracetamol'" [hour]="'18:00'"></app-pill-card>
+                <app-pill-card [name]="'Valeriana'" [hour]="'18:00'"></app-pill-card>
+            </div>
+        </div>
+    </div>
+</div>
