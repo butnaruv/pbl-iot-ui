@@ -1,9 +1,10 @@
 <div class="main">
     <div class="menu">
-        <img src="/assets/menu.png" alt="menu">
+        <img src="/assets/menu.png" alt="menu" (click) = enterMenu()>
         <img src="/assets/notification.png" alt="notification">
     </div>
-    <div class="infoDisplay">
+    <app-side-navbar *ngIf = isClicked></app-side-navbar>
+    <div *ngIf = !isClicked class="infoDisplay">
         <div class="nameData">
             Your heart rate is
         </div>

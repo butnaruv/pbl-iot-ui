@@ -44,6 +44,7 @@ div.signup{
     width: 100%;
     gap: 10px;
 }
+
 input {
     width: 80vw;
     height: 7vh;
@@ -54,6 +55,7 @@ input {
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     font-weight: 500;
+    padding-left: 5%;
 }
 
 input::placeholder {
@@ -66,7 +68,7 @@ button.continueWithGoogle {
     justify-content: center;
     align-items: center;
     gap:10px;
-    width: 80vw;
+    width: 85vw;
     height: 7vh;
     padding: 0;
     border-color: #587C85;

@@ -11,7 +11,7 @@ import { SignupRequest } from 'src/app/models/auth/signup-request';
   providedIn: 'root'
 })
 export class AuthService {
-  private url = '';
+  private url = 'https://e493-188-208-122-130.ngrok-free.app/api/auth';
   private httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   };
