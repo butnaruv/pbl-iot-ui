@@ -1,0 +1,46 @@
+  <div class="main">
+    <div class="menuName">Menu</div>
+    <div class="menu">
+        <div (click)="navigateDashboard()" class="dashboard">
+            <img src="/assets/home.png" alt="">
+            Dashboard
+        </div>
+        <div (click)="navigateData()" class="data">
+            <img src="/assets/heart.png" alt="">
+            Heart rate
+        </div>
+        <div class="addPill">
+            <img src="/assets/pill.png" alt="">
+            Ask for a pill
+        </div>
+        <div class="settings">
+            <img src="/assets/settings.png" alt="">
+            Settings
+        </div>
+    </div>
+  </div>
+
+
+
+<!-- <div class="sidenav" [ngClass]="collapsed ? 'sidenav-collapsed': ''">
+    <div class="logo-container">
+        <button class="logo" (click)="toggleCollapse()">A</button>
+        <div class="logo-text" @fadeInOut *ngIf="collapsed">Angular</div>
+        <button class="btn-close" @rotate *ngIf="collapsed" (click)="closeSidenav()">
+            <i class="fal fa-times close-icon"></i>
+        </button>
+    </div>
+    <ul class="sidenav-nav">
+        <li class="sidenav-nav-item" *ngFor="let data of navData">
+            <a class="sidenav-nav-link" [routerLink]="[data.routeLink]" 
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}"
+            >
+                <i class="sidenav-link-icon" [class]="data.icon"></i>
+                <span class="sidenav-link-text" @fadeInOut *ngIf="collapsed">
+                    {{data.label}}
+                </span>
+            </a>
+        </li>
+    </ul>
+</div> -->
